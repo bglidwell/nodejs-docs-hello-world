@@ -1,0 +1,8 @@
+{
+	"appService.zipIgnorePattern": [
+		"node_modules{,/**}",
+		".vscode{,/**}"
+	],
+	"appService.defaultWebAppToDeploy": "/subscriptions/c0852935-d871-45ef-86e7-ca0f32a4c5a3/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/kyzenupdatebackup",
+	"appService.deploySubpath": "."
+}
