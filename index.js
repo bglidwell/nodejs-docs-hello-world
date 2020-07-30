@@ -1,11 +1,12 @@
-const http = require('http');
+const express = require("express")
+const path = require("path")
 
-const server = http.createServer((request, response) => {
-    response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello World!");
-});
+const PORT = process.env.PORT || 5000
 
-const port = process.env.PORT || 1337;
-server.listen(port);
+const app = express()
 
-console.log("Server running at http://localhost:%d", port);
+app.listen(PORT, function () {
+  console.log(`Express server listening on port ${PORT}`)
+})
+
+app.use("/", express.static(path.join(__dirname, "public")))

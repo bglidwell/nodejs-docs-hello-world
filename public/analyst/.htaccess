@@ -1,0 +1,6 @@
+RewriteEngine On
+
+Options +Indexes
+IndexOptions +FancyIndexing
+IndexOptions FoldersFirst +FancyIndexing
+IndexOptions NameWidth=* +FancyIndexing
